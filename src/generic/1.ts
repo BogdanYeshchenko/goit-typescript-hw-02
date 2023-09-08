@@ -9,9 +9,10 @@ function getPromise<T> () {
   });
 }
 
-getPromise <[string, number]>()
-.then((data) => {
+getPromise ()
+.then((data: [string, number]) => {
   console.log(data);
+  return data
 });
 
 export {};
